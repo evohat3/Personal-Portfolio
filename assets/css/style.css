@@ -1,0 +1,262 @@
+:root {
+  --black: black;
+  --white: white;
+}
+
+* {
+  margin:0;
+  padding:0;  
+}
+
+body {
+  position: relative;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-size: 20px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+details {
+  display: none;
+}
+
+p { 
+  background-image: url('./assets/images/123876-space-wallpaper-4k-2560x1600-tablet.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1,
+h2 {
+  margin: 20px;
+}
+
+h2 {
+  color: var(--black);
+}
+
+main {
+  padding: 60px 0;
+}
+
+li {
+  display: inline;
+  padding: 0px 20px;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+header,
+footer {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: #09e2ff;
+}
+
+header {
+  position: fixed;
+  z-index: 999;
+  border-bottom: 10px solid var(--black);
+  border-top: 10px solid var(--black);
+}
+
+footer {
+  position: absolute;
+  margin-top: 0;
+  bottom: 0;
+  border-bottom: 10px solid var(--black);
+  border-top: 10px solid var(--black);
+  color: var(--black);    
+}
+
+figure {
+  margin-bottom: 40px;
+}
+
+figcaption {
+  margin-top: 100px;
+  display: block;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 98px 6px #09e2ff;
+  border-radius: 50%;
+}
+
+section {
+  margin-bottom: 0;
+  padding: 20px 10px 40px 10px;
+  border-top: 4px solid var(--black);
+  border-color: #FDF8F5;
+}
+
+form {
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+  border: 5px solid var(--black);
+  border-radius: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+  
+input, 
+textarea {
+  box-sizing: border-box;
+  width: 50%;
+  border: 2px solid var(--black);
+}
+
+textarea {
+  vertical-align: top;
+  height: 60px;
+}
+  
+button {
+  height: 40px;
+  width: 120px;
+  background-color: #4F4846;
+  color: #FDF8F5;
+}
+ 
+.abtme {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.name {
+margin-left: 10px;
+padding-top: 5px;
+}
+.email {
+  margin-left: 10px;
+  padding-top: 5px;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 12fr);
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--black);
+  min-height: 200px;
+  grid-gap: 5px;
+}
+
+.card {
+  box-shadow: 10px 5px 5px #b9b9b9;
+  background-color: #09e2ff;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 25px;
+  padding: 10px;
+  min-width: 100px;
+  text-align: center;
+  transition: all 0.1s ease-in-out;
+  transform: scale(.9);
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.card:hover details {
+  display: block;
+  color: var(--black);
+}
+
+article.card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+  position: relative;
+background-color: orangered
+}
+
+.card h1 {
+  color: var(--black);
+  border-radius: 20px;
+  align-content: center;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.card h1:hover {
+  background-color: var(--black);
+  color: #FDF8F5;
+  cursor: grabbing;
+}
+
+.card img {
+  object-fit: cover;
+  border-radius: 0%;
+}
+
+nav li:hover {
+  display: inline;
+  padding: 0px 20px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 25px;
+  animation-name: my-animation;
+  animation-duration: 1s;
+  animation-transformdirection: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: scale(1.0);
+}
+
+#contact {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation-name: my-animation;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes my-animation {
+  from {
+    background-color: #128d22;
+  }
+  to {
+    background-color: hsl(36, 91%, 39%);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nav {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
