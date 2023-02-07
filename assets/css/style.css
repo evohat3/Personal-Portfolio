@@ -16,10 +16,6 @@ body {
   color: var(--white);
 }
 
-details {
-  display: none;
-}
-
 p { 
   background-image: url('./assets/images/123876-space-wallpaper-4k-2560x1600-tablet.jpg');
   background-size: cover;
@@ -179,35 +175,34 @@ padding-top: 5px;
 
 }
 
-.card:hover details {
-  display: block;
-  color: var(--black);
-}
-
 article.card:hover {
   transform: scale(1.1);
   z-index: 2;
-  position: relative;
-background-color: orangered
+  position: relative;;
+  background-color: orangered;
 }
 
 .card h1 {
   color: var(--black);
-  border-radius: 20px;
-  align-content: center;
-  padding: 10px;
-  width: 100%;
-  height: 100px;
-  text-align: center;
+  position: absolute;
+  background-color: #09e2ff;
+  border-width: 5px;
+  border-style: outset;
+  min-width: 350px;
+  left: 75%;
+  top: 80%;
+  transform: translate(-50%, -50%);
 }
 
 .card h1:hover {
-  background-color: var(--black);
+  background-color: orangered;
   color: #FDF8F5;
   cursor: grabbing;
 }
 
 .card img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 0%;
 }
