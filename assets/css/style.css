@@ -127,7 +127,7 @@ button {
 }
 
 .ABTME {
-  margin-left: 50%;
+  margin-left: 45%;
   margin-top: 10%;
   margin-bottom: 1%;
   flex-direction: column;
@@ -146,18 +146,26 @@ button {
 }
 
 figcaption.ABTME {
-  border-style: outset;
-  border-color: #FDF8F5;
-  border-width: 5px;
+  border-style: solid;
+  border-color: var(--black);
+  border-width: 15px;
+  transform: scale(1.0);
+}
+
+figcaption.ABTME:hover {
+  transform: scale(2.0);
 }
 
 .abtme {
-  margin-left: 50%;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 5%;
   flex-direction: column;
   text-align: center;
-  border-style: outset;
-  border-color: #FDF8F5;
-  border-width: 5px;
+  border-style: solid;
+  border-color: var(--black);
+  border-width: 15px;
   border-radius: 25px;
   padding-top: 50px;
   min-width: 500px;
@@ -169,6 +177,11 @@ figcaption.ABTME {
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  transform: scale(1.0);
+}
+
+p.abtme:hover {
+  transform: scale(2.0);
 }
 
 .text-center {
